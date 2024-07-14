@@ -4,14 +4,21 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="./styles/normalize.css" />
-        <link rel="stylesheet" href="./styles/base.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./styles/base.css" />
+        <script src="./swiper/swiper-bundle.min.js" defer></script>
+        <script src="./js/script.js" defer></script>
     </head>
     <body>
         <div class="header container">
@@ -57,7 +64,43 @@
         </div>
         <section class="hero">
             <div class="container">
-                <div class="hero__container"></div>
+                <div class="hero__container">
+                    <div class="swiper hero__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide hero__slide">
+                                <div class="hero__slide-wrapper">
+                                    <img class="hero__slide-img" src="./img/slider-img.jpg" alt="Slide_1" />
+                                    <div class="hero__slide-img-cover"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero__slide">
+                                <div class="hero__slide-wrapper">
+                                    <img class="hero__slide-img" src="./img/slider-img.jpg" alt="Slide_2" />
+                                    <div class="hero__slide-img-cover"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero__slide">
+                                <div class="hero__slide-wrapper">
+                                    <img class="hero__slide-img" src="./img/slider-img.jpg" alt="Slide_3" />
+                                    <div class="hero__slide-img-cover"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-control hero__slider-control">
+                            <div class="slider-numbers slider-control__item">
+                                <span class="slider-numbers__current">01</span>
+                                <span class="slider-numbers__divider"></span>
+                                <span class="slider-numbers__total">03</span>
+                            </div>
+                            <div class="slider-control__item">
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                            <div class="slider-control__item">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                    </div>
+                </div>
             </div>
         </section>
     </body>
